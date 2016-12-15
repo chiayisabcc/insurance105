@@ -1,0 +1,469 @@
+<!DOCTYPE html>
+<html lang="zh-tw">
+
+<head>
+<meta charset="utf-8">
+<title>幸福國保樂遊寶島</title>
+<meta name="keywords" content="國民保險,大富翁">
+<meta name="description" content="快來挑戰，600多個獎項等著你唷！">
+<meta property="og:title" content="衛生福利部-幸福國保 樂遊寶島   網路闖關活動" />
+<meta property="og:description" content="快來挑戰，600多個獎項等著你唷！" />
+<meta property="og:url" content="http://nationa-pension.shanger.com.tw/" />
+<meta property="og:image" content="http://nationa-pension.shanger.com.tw/img/fbshare.jpg" />
+<link rel="shortcut icon" href="img/favicon.ico">
+<!-- CSS -->
+<link href="css/reset.css" rel="stylesheet" type="text/css" />
+<link href="css/jquery.mCustomScrollbar.css" rel="stylesheet" type="text/css" />
+<link href="css/main.css" rel="stylesheet" type="text/css" />
+<link href="css/game.css" rel="stylesheet" type="text/css" />
+
+
+
+</head>
+
+ <audio src="img/theme_song.mp3" autoplay loop id="song">
+ </audio>
+
+<body>
+
+	<!-- 請橫放 -->
+	<div class="no-vertical">
+		<h1>請將手機橫放使用喔！</h1>
+	</div>
+
+	<!-- 選單 -->
+	<nav id="main-nav">
+		<div class="xx">
+			<img src="img/xx.png">
+		</div>
+	    <ul class="nav-ul">
+	         <a href="rule.html" onclick="ga('send', 'event', 'home', 'click', 'rule');">
+	            <li id="draw" class="">
+	                <h1>活動說明</h1>
+	            </li>
+	        </a>
+	        <a href="game.html" onclick="ga('send', 'event', 'home', 'click', 'game');">
+	            <li id="how" class="">
+	                <h1>我要參加</h1>
+	            </li>
+	        </a>
+	        <a href="prize.html" onclick="ga('send', 'event', 'home', 'click', 'prize');">
+	            <li id="lineup" class="">
+	                <h1>活動獎項</h1>
+	            </li>
+	        </a>
+	        <a href="winner.html" onclick="ga('send', 'event', 'home', 'click', 'winner');">
+	        	<li id="show">
+	        	    <h1>得獎名單</h1>
+	        	</li>
+	        </a>
+	    </ul>
+	</nav>
+	<!-- 選單 -->
+
+	<!-- 答對 -->
+	<div class="popup" >
+			<div class="popup-box results" id="right">
+				<img class="result" src="img/right.png">
+				<img class="btn close xx" src="img/oo.png">
+				<img class="btn continue xx" src="img/continue.png">
+            </div>
+	</div>
+	<!-- 答對end -->
+
+	<!-- 答錯 -->
+	<div class="popup" >
+			<div class="popup-box results" id="wrong">
+				<img class="result" src="img/wrong.png">
+				<img class="btn close xx" src="img/xx.png">
+				<img class="btn continue xx" src="img/continue.png">
+            </div>
+	</div>
+	<!-- 答錯end -->
+
+	<!-- 過關 -->
+	<div class="popup" >
+		<a href="info.html">
+			<div class="popup-box results" id="complete">
+				<img class="result" src="img/complete.png">
+				<p class="complete-text">請點擊繼續</p>
+            </div>
+		</a>
+	</div>
+	<!-- 過關end -->
+
+	<!-- 卡片們 -->
+	<div class="popup" >
+			<div class="popup-box cards" id="step-1-card">
+				<div class="card">
+					<div class="face front">
+					   <img src="img/location_1_1.png">
+					 </div>
+					 <div class="face back cardAK">
+					  	<img src="img/location_1_2.png" class="absolute">
+					  	<div class="options first btn wrong">
+					  		<img src="img/location_1_a_1.png">
+					  	</div>
+					  	<div class="options btn right">
+					  		<img src="img/location_1_a_2.png">
+					  	</div>
+					  	<div class="options btn wrong">
+					  		<img src="img/location_1_a_3.png">
+					  	</div>
+					  	<div class="options btn wrong">
+					  		<img src="img/location_1_a_4.png">
+					  	</div>
+					 </div>	
+				</div>
+				
+            </div>
+	</div>
+
+	<div class="popup" >
+			<div class="popup-box cards" id="step-2-card">
+				<div class="card">
+					<div class="face front">
+					   <img src="img/location_2_1.png">
+					 </div>
+					 <div class="face back cardAK">
+					  	<img src="img/location_2_2.png" class="absolute">
+					  	<div class="options first btn wrong">
+					  		<img src="img/location_2_a_1.png">
+					  	</div>
+					  	<div class="options btn wrong">
+					  		<img src="img/location_2_a_2.png">
+					  	</div>
+					  	<div class="options btn wrong">
+					  		<img src="img/location_2_a_3.png">
+					  	</div>
+					  	<div class="options btn right">
+					  		<img src="img/location_2_a_4.png">
+					  	</div>
+					 </div>	
+				</div>
+				
+            </div>
+	</div>
+
+
+	<div class="popup" >
+		<div class="popup-box cards to-choose" id="step-3-card">
+			<div class="card-sign">
+				<img src="img/pick_chance.png">
+			</div>
+			<div class="card btn to-pick-card first">
+				<div class="face front">
+				   <img src="img/chance_b.png">
+				 </div>
+				 <div class="face back cardAK">
+				  	<img src="img/chance_1.png" class="absolute">
+				 </div>	
+			</div>
+			<div class="card btn to-pick-card">
+				<div class="face front">
+				   <img src="img/chance_b.png">
+				 </div>
+				 <div class="face back cardAK">
+				  	<img src="img/chance_1.png" class="absolute">
+				 </div>	
+			</div>
+			<div class="card btn to-pick-card">
+				<div class="face front">
+				   <img src="img/chance_b.png">
+				 </div>
+				 <div class="face back cardAK">
+				  	<img src="img/chance_1.png" class="absolute">
+				 </div>	
+			</div>
+			<div class="card btn to-pick-card">
+				<div class="face front">
+				   <img src="img/chance_b.png">
+				 </div>
+				 <div class="face back cardAK">
+				  	<img src="img/chance_1.png" class="absolute">
+				 </div>	
+			</div>
+			<div class="card btn to-pick-card">
+				<div class="face front">
+				   <img src="img/chance_b.png">
+				 </div>
+				 <div class="face back cardAK">
+				  	<img src="img/chance_1.png" class="absolute">
+				 </div>	
+			</div>
+			
+        </div>
+	</div>
+
+	<div class="popup" >
+			<div class="popup-box cards" id="step-4-card">
+				<div class="card">
+					<div class="face front">
+					   <img src="img/location_4_1.png">
+					 </div>
+					 <div class="face back cardAK">
+					  	<img src="img/location_4_2.png" class="absolute">
+					  	<div class="options first btn right">
+					  		<img src="img/location_4_a_1.png">
+					  	</div>
+					  	<div class="options btn wrong">
+					  		<img src="img/location_4_a_2.png">
+					  	</div>
+					 </div>	
+				</div>
+				
+            </div>
+	</div>
+
+	<div class="popup" >
+			<div class="popup-box cards" id="step-5-card">
+				<div class="card">
+					<div class="face front">
+					   <img src="img/location_5_1.png">
+					 </div>
+					 <div class="face back cardAK">
+					  	<img src="img/location_5_2.png" class="absolute">
+					  	<div class="options first btn wrong">
+					  		<img src="img/location_5_a_1.png">
+					  	</div>
+					  	<div class="options btn wrong">
+					  		<img src="img/location_5_a_2.png">
+					  	</div>
+					  	<div class="options btn right">
+					  		<img src="img/location_5_a_3.png">
+					  	</div>
+					  	<div class="options btn wrong">
+					  		<img src="img/location_5_a_4.png">
+					  	</div>
+					 </div>	
+				</div>
+				
+            </div>
+	</div>
+
+	<div class="popup" >
+			<div class="popup-box cards" id="step-6-card">
+				<div class="card">
+					<div class="face front">
+					   <img src="img/location_6_1.png">
+					 </div>
+					 <div class="face back cardAK">
+					  	<img src="img/location_6_2.png" class="absolute">
+					  	<div class="options first btn wrong">
+					  		<img src="img/location_6_a_1.png">
+					  	</div>
+					  	<div class="options btn right">
+					  		<img src="img/location_6_a_2.png">
+					  	</div>
+					  	<div class="options btn wrong">
+					  		<img src="img/location_6_a_3.png">
+					  	</div>
+					  	<div class="options btn wrong">
+					  		<img src="img/location_6_a_4.png">
+					  	</div>
+					 </div>	
+				</div>
+				
+            </div>
+	</div>
+
+	<div class="popup" >
+		<div class="popup-box cards to-choose" id="step-7-card">
+			<div class="card-sign">
+				<img src="img/pick_destiny.png">
+			</div>
+			<div class="card btn to-pick-card first">
+				<div class="face front">
+				   <img src="img/destiny_b.png">
+				 </div>
+				 <div class="face back cardAK">
+				  	<img src="img/destiny_1.png" class="absolute">
+				 </div>	
+			</div>
+			<div class="card btn to-pick-card">
+				<div class="face front">
+				   <img src="img/destiny_b.png">
+				 </div>
+				 <div class="face back cardAK">
+				  	<img src="img/destiny_1.png" class="absolute">
+				 </div>	
+			</div>
+			<div class="card btn to-pick-card">
+				<div class="face front">
+				   <img src="img/destiny_b.png">
+				 </div>
+				 <div class="face back cardAK">
+				  	<img src="img/destiny_1.png" class="absolute">
+				 </div>	
+			</div>
+			<div class="card btn to-pick-card">
+				<div class="face front">
+				   <img src="img/destiny_b.png">
+				 </div>
+				 <div class="face back cardAK">
+				  	<img src="img/destiny_1.png" class="absolute">
+				 </div>	
+			</div>
+			<div class="card btn to-pick-card">
+				<div class="face front">
+				   <img src="img/destiny_b.png">
+				 </div>
+				 <div class="face back cardAK">
+				  	<img src="img/destiny_1.png" class="absolute">
+				 </div>	
+			</div>
+			
+        </div>
+	</div>
+
+
+	<div class="popup" >
+			<div class="popup-box cards" id="step-8-card">
+				<div class="card">
+					<div class="face front">
+					   <img src="img/location_8_1.png">
+					 </div>
+					 <div class="face back cardAK">
+					  	<img src="img/location_8_2.png" class="absolute">
+					  	<div class="options first btn right">
+					  		<img src="img/location_8_a_1.png">
+					  	</div>
+					  	<div class="options btn wrong">
+					  		<img src="img/location_8_a_2.png">
+					  	</div>
+					  	<div class="options btn wrong">
+					  		<img src="img/location_8_a_3.png">
+					  	</div>
+					  	<div class="options btn wrong">
+					  		<img src="img/location_8_a_4.png">
+					  	</div>
+					 </div>	
+				</div>
+				
+            </div>
+	</div>
+
+	<div class="popup" >
+			<div class="popup-box cards" id="step-9-card">
+				<div class="card">
+					<div class="face front">
+					   <img src="img/location_9_1.png">
+					 </div>
+					 <div class="face back cardAK">
+					  	<img src="img/location_9_2.png" class="absolute">
+					  	<div class="options first btn wrong">
+					  		<img src="img/location_9_a_1.png">
+					  	</div>
+					  	<div class="options btn wrong">
+					  		<img src="img/location_9_a_2.png">
+					  	</div>
+					  	<div class="options btn wrong">
+					  		<img src="img/location_9_a_3.png">
+					  	</div>
+					  	<div class="options btn right">
+					  		<img src="img/location_9_a_4.png">
+					  	</div>
+					 </div>	
+				</div>
+				
+            </div>
+	</div>
+
+	<!-- 卡片們 -->
+
+	<div class="wrap">
+		<div class="container">
+			<div class="pick-zone">
+				<div class="character-pick btn" id="character-1">
+					<div class="character-pic">
+						<img src="img/character_1.png">
+					</div>
+					<div class="character-name">
+						<img src="img/character_1_name.png">
+					</div>
+				</div>
+				<div class="character-pick btn" id="character-2">
+					<div class="character-pic">
+						<img src="img/character_2.png">
+					</div>
+					<div class="character-name">
+						<img src="img/character_2_name.png">
+					</div>
+				</div>
+				<div class="character-pick btn" id="character-3">
+					<div class="character-pic">
+						<img src="img/character_3.png">
+					</div>
+					<div class="character-name">
+						<img src="img/character_3_name.png">
+					</div>
+				</div>
+				<div class="character-pick btn" id="character-4">
+					<div class="character-pic">
+						<img src="img/character_4.png">
+					</div>
+					<div class="character-name">
+						<img src="img/character_4_name.png">
+					</div>
+				</div>
+				<div class="character-pick btn" id="character-5">
+					<div class="character-pic">
+						<img src="img/character_5.png">
+					</div>
+					<div class="character-name">
+						<img src="img/character_5_name.png">
+					</div>
+				</div>
+			</div>
+			
+			<div class="game-zone">
+				<div class="map ">
+					<img src="img/map.png">
+				</div>				
+				
+				<div class="turntable btn ">
+					<img src="img/turntable.png">
+				</div>
+				<div class="doll ">
+					<img src="img/doll.png">
+				</div>
+				<div class="character ">
+					<img src="img/character_1.png">
+				</div>
+			</div>
+
+			<div class="game-header-wrap">
+				<div class="logo">
+					<img src="img/logo.png">
+				</div>
+				<div class="mute-btn btn mute">
+					<img src="img/mute-btn.jpg">
+				</div>
+				<div class="menu-btn">
+					<img src="img/menu_btn.png">
+				</div>
+			</div>
+		</div>		
+	</div>
+
+
+	<footer>
+		<img class="footers footer-1" src="img/footer_1.png">		
+		<img class="footers footer-2" src="img/footer_2.png">
+		<img class="footers footer-3" src="img/footer_3.png">
+		<div class="counter" style="text-align:right;position:relative;right:62px;top:15px;"><script type="text/javascript" src="http://services.webestools.com/cpt_pages_views/22575-8-6.js"></script></div>
+		<img class="footers footer-4" src="img/footer_4.png">
+		<img class="footers footer-5" src="img/footer_5.png">
+	</footer>
+
+<script type="text/javascript" src="js/libs/jquery-1.11.3.min.js"></script>
+<script type="text/javascript" src="js/libs/jquery-ui.min.js"></script>
+<script type="text/javascript" src="js/libs/jquery.nicescroll.min.js"></script>
+<script type="text/javascript" src="js/libs/jquery.cookie.js"></script>
+
+<script type="text/javascript" src="js/main.js"></script>
+<script type="text/javascript" src="js/game.js"></script>
+<script type="text/javascript" src="js/ga.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,159 @@
+.container{
+    top: 7%;
+}
+
+.doll-zone{
+    position: absolute;
+/*    left: 50%;
+    margin-left: -500px;
+    top: 50%;
+    margin-top: -300px;*/
+    left: 16%;
+    width: 13%;
+}
+.doll-speaking{
+    margin-left: -133px;
+    width: 430px;
+}
+.doll-speaking img{
+    width: 100%;
+}
+.doll-stand{
+    position: relative;
+    margin-top: -38%;
+}
+.doll-stand img{
+    width: 100%;
+}
+
+.rule-zone {
+    /* position: absolute; */
+    /* width: 50vw; */
+    /* height: 41vh; */
+    /* left: 40vw; */
+    /* top: 13vh; */
+    /* padding: 0 2%; */
+    position: absolute;
+    width: 50vw;
+    height: 41vh;
+    left: 40vw;
+    top: 13vh;
+    padding: 0 2%;
+    min-width: 555px;
+    overflow-x: hidden;
+    /* overflow-x: hidden; */
+}
+
+.flow{
+    font-size: 24px;
+    display: block;
+    width: auto;
+}
+
+.triangle{
+    display: inline-block;
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 9px 0 9px 12.6px;
+    margin: 0 7px;
+    border-color: transparent transparent transparent #3ea83a;
+}
+
+.green.flow{
+    margin-bottom: 20px;
+}
+
+.rule{
+    position: relative;
+    display: inline-block;
+    letter-spacing: 1px;
+    line-height: 28px;
+    color: #111111;
+    font-size: 18px;
+    text-align: left;
+    vertical-align: top;
+    left: 31px;
+    width: 680px;
+    margin-bottom: 20px;
+}
+
+.rule-form{
+    position: relative;
+    margin-left: 159px;
+}
+.rule-form-2{
+    margin-left: 0px;
+}
+
+.rule-form-1 p{
+    line-height: 21pt;
+}
+
+.rule-l,.rule-m,.rule-r{
+    display: inline-block;
+    position: relative;
+    vertical-align: top;
+}
+.rule-l{
+    margin-left: 33px;
+}
+.rule-m{
+    margin-left: 45px;
+}
+.rule-r{
+    margin-left: 44px;
+}
+
+.rule-form-2 .rule-r{
+    margin-left: 19px;
+}
+
+.form{
+    position: absolute;
+    top: 6px;
+    left: 14px;
+    width: 400px;
+}
+.rule-form-2 .form{
+    width: 600px;
+    top: 5px;
+}
+
+.tripple.title{
+    margin-top: 40px;
+}
+.tripple.rule{
+    left: 0;
+    width: auto;
+}
+
+.number,.text{
+    display: inline-block;
+    vertical-align: top;
+}
+.number{
+    width: 2%;
+}
+.text{
+    width: 90%;
+}
+
+@media screen and (min-width: 1600px ){
+
+.doll-zone{
+    left: 24%;
+
+}
+
+}
+
+@media screen and (max-width: 1300px ){
+
+.rule-form-2{
+    margin-left: -55px;
+    font-size: 8pt;
+    width: 573px;
+}
+
+}

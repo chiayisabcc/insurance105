@@ -1,0 +1,43 @@
+.doll-zone{
+    position: relative;
+        text-align: right;
+        margin-bottom: -108px;
+}
+
+.doll-stand{
+	margin-top: -9%;
+}
+
+.rule-zone{
+    position: relative;
+    margin-top: -20%;
+}
+
+.last{
+	font-weight: inherit;
+    line-height: 26pt;
+}
+
+.last{
+	margin-bottom: 40px;
+}
+
+.winner-zone{
+    margin-bottom: 20px;
+}
+.winners-col{
+    display: inline-block;
+    width: 25%;
+    text-align: center;
+}
+
+.number,.text{
+    display: inline-block;
+    vertical-align: top;
+}
+.number{
+    width: 2%;
+}
+.text{
+    width: 90%;
+}

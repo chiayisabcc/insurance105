@@ -1,0 +1,28 @@
+.award-zone{
+    position: absolute;
+    display: inline-block;
+    width: 70vw;
+    left: 0;
+    right: 0;
+    margin: auto;
+    top: 14vh;
+    min-width: 950px;
+}
+
+.award{
+    width: 20%;
+    margin-right: 9%;
+    display: inline-block;
+    position: relative;
+}
+.award.first{
+    margin-left: 11%
+}
+.award img{
+    position: relative;
+    width: 100%;
+}
+
+.description{
+    margin-bottom: 4%;
+}

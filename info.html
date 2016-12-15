@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="zh-tw">
+
+<head>
+<meta charset="utf-8">
+<title>幸福國保樂遊寶島</title>
+<meta name="keywords" content="國民保險,大富翁">
+<meta name="description" content="快來挑戰，600多個獎項等著你唷！">
+<meta property="og:title" content="衛生福利部-幸福國保 樂遊寶島   網路闖關活動" />
+<meta property="og:description" content="快來挑戰，600多個獎項等著你唷！" />
+<meta property="og:url" content="http://nationa-pension.shanger.com.tw/" />
+<meta property="og:image" content="http://nationa-pension.shanger.com.tw/img/fbshare.jpg" />
+<link rel="shortcut icon" href="img/favicon.ico">
+<!-- CSS -->
+<link href="css/reset.css" rel="stylesheet" type="text/css" />
+<link href="css/jquery.mCustomScrollbar.css" rel="stylesheet" type="text/css" />
+<link href="css/main.css" rel="stylesheet" type="text/css" />
+<link href="css/info.css" rel="stylesheet" type="text/css" />
+<script>
+	if (navigator.userAgent.match(/HTC/i) || navigator.userAgent.match(/Android/i) || navigator.userAgent.match(/iPhone/i) || navigator.userAgent.match(/iPod/i) || navigator.userAgent.match(/iPad/i)) {
+		window.location.href = "/m/game.html";
+	}
+</script>
+</head>
+
+<audio src="img/theme_song.mp3" autoplay loop id="song"></audio>
+
+<body>
+	<div class="wrap">
+		<div class="container">
+			<div class="info-zone">
+				<div class="doll-zone">
+					<div class="doll-speaking">
+						<img src="img/thx.png">
+					</div>
+					<div class="doll-stand">
+						<img src="img/doll_stand.png">
+					</div>
+				</div>
+				<div class="input-zone">
+					<div class="inputs name">
+	                		<p class="input-tag input-tag">姓名</p>
+	                		<input class="input" name="fullname" id="fullname" type="text" maxlength="10" />
+	            	</div>
+					<div class="inputs phone">
+	                		<p class="input-tag input-tag">電話</p>
+	                		<input class="input" name="cell" id="cell" type="text" maxlength="10" />
+	            	</div>
+					<div class="inputs address">
+						<p class="input-tag input-tag">地址</p>
+						<select id="formA1" name="city" id="city" class="input">
+							<option value="基隆市">基隆市</option>
+							<option value="台北市">台北市</option>
+							<option value="新北市">新北市</option>
+							<option value="桃園市">桃園市</option>
+							<option value="新竹市">新竹市</option>
+							<option value="新竹縣">新竹縣</option>
+							<option value="苗栗縣">苗栗縣</option>
+							<option value="台中市">台中市</option>
+							<option value="彰化縣">彰化縣</option>
+							<option value="南投縣">南投縣</option>
+							<option value="嘉義市">嘉義市</option>
+							<option value="嘉義縣">嘉義縣</option>
+							<option value="雲林縣">雲林縣</option>
+							<option value="台南市">台南市</option>
+							<option value="高雄市">高雄市</option>
+							<option value="屏東縣">屏東縣</option>
+							<option value="台東縣">台東縣</option>
+							<option value="花蓮縣">花蓮縣</option>
+							<option value="宜蘭縣">宜蘭縣</option>
+							<option value="金門縣">金門縣</option>
+							<option value="連江縣">連江縣</option>
+							<option value="澎湖縣">澎湖縣</option>
+							<option value="南海諸島">南海諸島</option>
+						</select>
+						<input class="input input-address" name="address" id="address" maxlength="100" type="text" placeholder="" />
+	            	</div>
+					<div class="inputs email">
+	                		<p class="input-tag input-tag">Email</p>
+	                		<input class="input" name="email" id="email" type="text" maxlength="100" />
+	            	</div>
+	            	<div class="form-agree form-item">
+	            	    <label class="btn agree-label">
+	            	        <input class="form-agreebox" id="agree" name="agree" type="checkbox" /> 
+	            	        <div class="box-know">
+	<!--             	        	<div class="tick-zone">
+	            	        		<img src="img/tick.png">
+	            	        	</div> -->
+	            	        </div>
+	            	        <p>所有欄位皆為必填，請填寫真實基本資料，以維護您的得獎權益。<br>
+	            	        我同意本網站蒐集個人資料以利活動聯繫
+	            	        </p>
+	            	    </label>  
+	            	</div>
+	            	<div class="btn send">
+	            		<img src="img/send.png">
+	            	</div>
+				</div>
+			</div>	
+
+			<div class="fb-zone">
+				<div class="doll-zone">
+					<div class="doll">
+						<img src="img/doll_stand.png">
+					</div>
+				</div>
+				<div class="share-zone">
+					<div class="share-text">
+						<img src="img/share_text.png">
+					</div>
+					<a href="javascript:;" onclick="javascript:share(); ga('send', 'event', 'home', 'click', 'share'); return false;">
+						<h2 class="title btn">
+							立刻分享
+						</h2>
+					</a>
+					<input type="hidden" name="postid" id="postid" />
+					<!--
+					<a href="http://www.facebook.com/sharer?u=http://nationa-pension.shanger.com.tw/" target="_blank" onclick="ga('send', 'event', 'home', 'click', 'share');">
+						<h2 class="title btn">
+							立刻分享
+						</h2>
+					</a>
+					-->
+					<a href="index.html" onclick="ga('send', 'event', 'home', 'click', 'share_back');">
+						<h2 class="title btn">
+							現在還不用
+						</h2>
+					</a>
+				</div>
+			</div>	
+		</div>
+
+	</div>
+	<header>
+
+		<div class="mute-btn btn">
+			<img src="img/mute-btn.jpg">
+		</div>
+		
+		
+		<ul id="menu">
+			<li>
+				<a href="rule.html" onclick="ga('send', 'event', 'home', 'click', 'rule');">
+					<img src="img/option_1.png">
+				</a>
+			</li>			
+			<li>
+				<a href="game.html" onclick="ga('send', 'event', 'home', 'click', 'game');">
+					<img src="img/option_2.png">
+				</a>
+			</li>	
+			<li>
+				<a href="prize.html" onclick="ga('send', 'event', 'home', 'click', 'prize');">
+					<img src="img/option_3.png">
+				</a>
+			</li>	
+			<li>
+				<a href="winner.html" onclick="ga('send', 'event', 'home', 'click', 'winner');">
+					<img src="img/option_4.png">
+				</a>
+			</li>	
+		</ul>
+		<a href="index.html" onclick="ga('send', 'event', 'home', 'click', 'back_index');">
+			<div id="logo-s">
+				<img src="img/logo_s.png">
+			</div>
+		</a>
+
+	</header>
+
+	<footer>
+		<img class="footers footer-1" src="img/footer_1.png">		
+		<img class="footers footer-2" src="img/footer_2.png">
+		<img class="footers footer-3" src="img/footer_3.png">
+		<div class="counter" style="text-align:right;position:relative;right:62px;top:15px;"><script type="text/javascript" src="http://services.webestools.com/cpt_pages_views/22575-8-6.js"></script></div>
+		<img class="footers footer-4" src="img/footer_4.png">
+		<img class="footers footer-5" src="img/footer_5.png">
+	</footer>
+
+<script type="text/javascript" src="js/libs/jquery-1.11.3.min.js"></script>
+<script type="text/javascript" src="js/libs/jquery-ui.min.js"></script>
+<script type="text/javascript" src="js/libs/jquery.nicescroll.min.js"></script>
+<script type="text/javascript" src="js/libs/jquery.cookie.js"></script>
+
+<script type="text/javascript" src="js/main.js"></script>
+<script type="text/javascript" src="js/info.js"></script>
+<script type="text/javascript" src="js/ga.js"></script>
+
+<script>
+  window.fbAsyncInit = function() {
+    FB.init({
+      appId      : '335549203449998',
+      xfbml      : true,
+      version    : 'v2.7'
+    });
+  };
+
+  (function(d, s, id){
+     var js, fjs = d.getElementsByTagName(s)[0];
+     if (d.getElementById(id)) {return;}
+     js = d.createElement(s); js.id = id;
+     js.src = "//connect.facebook.net/en_US/sdk.js";
+     fjs.parentNode.insertBefore(js, fjs);
+   }(document, 'script', 'facebook-jssdk'));
+</script>
+
+</body>
+</html>

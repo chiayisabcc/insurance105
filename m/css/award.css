@@ -1,0 +1,51 @@
+/*.container{
+    width: 80%;
+}
+*/
+.award-zone{
+    position: relative;
+    display: inline-block;
+    width: 100%;
+    left: 0;
+    right: 0;
+    margin: auto;
+    margin-top: 50px;
+}
+
+.award{
+    width: 20%;
+    margin-right: 9%;
+    margin-bottom: 40px;
+    display: inline-block;
+    position: relative;
+}
+.award.first{
+    margin-left: 11%;
+}
+.award img{
+    position: relative;
+    width: 100%;
+}
+
+.description{
+    margin-bottom: 4%;
+}
+
+
+@media screen and (orientation: portrait){
+
+.container{
+    text-align: center;
+}
+.award-zone{
+    display: inline-block;
+    width: 75%;
+}
+.award{
+    width:100%;
+}
+.award.first{
+    margin-left: 0%;
+}
+
+}

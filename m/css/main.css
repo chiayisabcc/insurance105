@@ -1,0 +1,319 @@
+html,body{ 
+
+    position:relative; 
+
+    max-width:100%; 
+
+    width:100%; 
+
+    height:100%;
+
+    font-family:Arial,'Microsoft JhengHei','微軟正黑體'; 
+
+    overflow:inherit !important;
+
+    font-size:16px;   
+
+}
+
+body{
+    background-image: url('../img/bg.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 230px 0 65px 0;
+}
+
+
+
+*{ -webkit-box-sizing:border-box;-moz-box-sizing:border-box;box-sizing:border-box; }
+
+p{
+    position: relative;
+    display: inline-block;
+    letter-spacing: 1pt;
+    line-height: 20pt;
+    color: #111111;
+    font-size: 14pt;
+    font-weight: bold;
+    text-align: left;
+}
+
+img{ vertical-align: middle; }
+
+
+
+h1{
+
+    color: #ffffff;
+
+    margin-bottom:25pt; 
+
+    font-size: 3.125em;
+
+    letter-spacing: 6px;
+
+    text-align: center;
+
+    position: relative;
+    font-weight: bold;
+    top: 36%;
+
+}
+
+h2{
+
+    font-size: 20pt;
+    text-align: left;
+    letter-spacing: 2px;
+    position: relative;
+    width: auto;
+    color: #ffffff;
+    display: inline-block;
+    font-weight: bold;
+
+}
+
+h3{
+
+    font-size: 1.2em;
+
+    text-align: center;
+
+    letter-spacing: 3px;
+
+}
+
+a{
+    text-decoration: none;
+    color: inherit;
+}
+
+.btn{
+    cursor: pointer;
+}
+
+.absolute{
+    position: absolute;
+}
+
+.title{
+    font-size: 20pt;
+    text-align: left;
+    letter-spacing: 3px;
+    position: relative;
+    background: #3ea83a;
+    width: auto;
+    color: #ffffff;
+    display: inline-block;
+    padding: 10px 22px;
+    border-radius: 15px;
+    margin: 20px 0;
+}
+
+.green{
+    color: #3ea83a;
+}
+
+.overflow-hidden{
+    overflow: hidden!important;
+}
+
+.no-vertical{
+    position: fixed;
+    display: none;
+    width: 100vw;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    background:#3199a8;
+    z-index: 1000;
+}
+
+.hide{
+    display: none;
+}
+/* ----------------------------- 共 用 ----------------------------- */
+
+.mute-btn{
+    position: fixed;
+    top: 15px;
+    left: 15px;
+    width: 35px;
+    height: 35px;
+    overflow: hidden;
+    z-index: 500;
+}
+.mute-btn img{
+    width: 100%;
+    transform: translate(0,-50%);
+
+}
+
+.mute-btn.mute img{
+    transform: translate(0,0%);
+}
+
+
+#main-nav{
+    position: fixed;
+    right: -53%;
+    top: 0;
+    width: 33%;
+    height: 100%;
+    z-index: 1000;
+    transition: right 1s;
+}
+#main-nav.active{
+    right: 0%;
+}
+#main-nav .xx{
+    position: absolute;
+    width: 20%;
+    left: -20%;
+    top: 3%;
+}
+#main-nav .xx img{
+    width: 100%;
+}
+.nav-ul{
+    height: 100%;
+    width: 100%;
+}
+.nav-ul li{
+    height: 25%;
+    width: 100%;
+}
+.nav-ul a:nth-of-type(1) li{
+    background: #41a739;
+}
+.nav-ul a:nth-of-type(2) li{
+    background: #018bd6;
+}
+.nav-ul a:nth-of-type(3) li{
+    background: #efae16;
+}
+.nav-ul a:nth-of-type(4) li{
+    background: #e1740d;
+}
+
+header{
+    position: absolute;
+    width: 100%;
+    height: 230px;
+    top: 0;
+    left: 0;
+    z-index: 500;
+}
+
+.logo{
+    position: absolute;
+    left: 30px;
+    top: 30px;
+}
+
+.menu-btn{
+    position: absolute;
+    right: 30px;
+    top: 55px;
+}
+
+
+/*header*/
+
+.wrap{
+    position: relative;
+    min-height: 100%;
+    /*padding: 230px 5vw 65px 5vw;*/
+    padding: 0 5vw;
+}
+
+.container{
+    position: relative;
+    width: 100%;
+    /*height: 100%;*/
+    min-height: 100%;
+}
+
+/*container*/
+
+footer{
+    position: absolute;
+    height: 65px;
+    width: 100%;
+    background:rgba(255,255,255,1);
+}
+
+.footers{
+    position: absolute;
+    display: inline-block;
+    top: 20px;
+}
+
+/*footer img:nth-of-type(1){
+    left: 30px;
+}
+footer img:nth-of-type(2){
+    left: 254px;
+}
+footer img:nth-of-type(3){
+    right: 220px;
+}*/
+.footer-1{
+    left: 30px;
+}
+.footer-2{
+    left: 254px;
+}
+.footer-3{
+    right: 247px;
+}
+.footer-4{
+    right: 157px;
+}
+.footer-5{
+    right: 34px;
+    top: 24px;
+}
+
+.counter img{
+    width: 13px;
+}
+/*popup*/
+
+.popup{
+    height: 100%;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    display: none;
+    z-index: 100;
+    background: rgba(0,0,0,0.7);
+    overflow:auto;
+}
+
+.popup-box{
+    position: absolute;
+    z-index: 100;
+
+}
+
+@media screen and (orientation: portrait){
+
+#main-nav{
+    width: 100%;
+    right: -100%;
+}
+
+#main-nav .xx{
+    width: 13%;
+    right: 3%;
+    top: 2%;
+    left: inherit;
+}
+
+h1{
+    font-size: 5.125em;
+    top: 45%;
+}
+
+}

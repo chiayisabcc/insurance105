@@ -1,0 +1,490 @@
+body{
+    background-image:url('../img/bg_game.png');
+    padding: 0;
+}
+
+header{
+    position: fixed;
+    width: 100%;
+    height: 230px;
+    top: 0;
+    left: 0;
+}
+.game-header-wrap{
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+
+#logo-s{
+    position: absolute;
+    margin-top: 29px;
+    left: 50%;
+    margin-left: -530px;
+}
+
+#main-nav{
+    width: 33%;
+}
+
+
+/*header*/
+
+.wrap{
+    position: relative;
+    /*padding: 0 0 65px 0;*/
+    padding: 0;
+    widows: 100%;
+    height: 100%;
+}
+
+.container{
+    position: relative;
+    widows: 100%;
+    height: 100%;
+}
+
+/*選擇人物*/
+
+.pick-zone{
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 29vh;
+    width: 90vw;
+    margin: 0 auto;
+    max-width: 1300px;
+}
+.character-pick{
+    position: relative;
+    display: inline-block;
+    width: 15%;
+    margin-right: 2%;
+    margin-left: 2%;
+}
+.character-pick img{
+    position: relative;
+    width: 100%;
+}
+.character-pic{
+    margin-bottom: 7%;
+}
+#character-1 .character-pic{
+    animation: character_move_1 8s infinite;
+}
+#character-2 .character-pic{
+    animation: character_move_2 8s infinite;
+}
+#character-3 .character-pic{
+    animation: character_move_3 8s infinite;
+}
+#character-4 .character-pic{
+    animation: character_move_4 8s infinite;
+}
+#character-5 .character-pic{
+    animation: character_move_5 8s infinite;
+}
+
+
+/*選擇人物*/
+
+.game-zone{
+    position: relative;
+    margin-top: 12vh;
+    left: 10%;
+    width: 80vw;
+    display: none;
+}
+.game-zone img,
+.game-header-wrap img{
+    width: 100%;
+}
+
+.map{
+    position: relative;
+}
+.logo{
+    position: absolute;
+/*    left: -237px;
+    top: -195px;*/
+    /*left: 3vw;*/
+    left: 5vw;
+    top: 1vh;
+    width: 20vw;
+}
+
+.menu-btn{
+    position: absolute;
+    right: 3%;
+    top: 3%;
+    width: 10%;
+}
+.doll{
+    position: absolute;
+/*    left: 200px;
+    top: 150px;*/
+    left: 12%;
+    top: 28%;
+    width: 39.7%;
+}
+.turntable{
+    position: absolute;
+    left: 48%;
+    top: 29%;
+    width: 31.2%;
+}
+.start{
+    position: absolute;
+    left: 48%;
+    top: 29%;
+    width: 31.2%;
+}
+
+.roll{
+    transform: rotate(548deg) 50% rotate(82deg);
+}
+
+.character{
+    position: absolute;
+    left: 75%;
+    top: 60%;
+    width: 10%;
+    transition: all 1s ease 0s;
+    z-index: 20;
+}
+.character.active{
+    animation: character_move 0.5s infinite;
+}
+
+.good{
+    position: absolute;
+    width: 8%;
+    transform:translate(-50%,100%);
+    z-index: 10;
+}
+
+/*大富翁上的位置*/
+.step-0{
+    left: 75%;
+    top: 60%;
+}
+.step-1{
+    left: 87%;
+    top: 60%;
+}
+.step-2{
+    left: 87%;
+    top: 28%;
+}
+.step-3{
+    left: 87%;
+    top: -4%;
+}
+.step-4{
+    left: 68%;
+    top: -4%;
+}
+.step-5{
+    left: 49%;
+    top: -4%;
+}
+.step-6{
+    left: 32%;
+    top: -4%;
+}
+.step-7{
+    left: 8%;
+    top: -4%;
+}
+.step-8{
+    left: 8%;
+    top: 32%;
+}
+.step-9{
+    left: 8%;
+    top: 60%;
+}
+.step-10{
+    left: 19%;
+    top: 60%;
+}
+.step-11{
+    left: 21%;
+    top: 60%;
+}
+/*大富翁上的位置*/
+
+/*題目*/
+.cards{
+    margin: 0 auto;
+    width: 600px;
+    height: 580px;
+    margin: 0 auto;
+    /*top: 50%;*/
+    left: 50%;
+    /*margin-top: -340px;*/
+    margin-left: -240px;
+    /*background: #ffffff;*/
+}
+
+.card {
+  position: relative;
+  perspective: 1000;
+    -webkit-perspective: 1000;
+    width: 100%;
+    height: 100%;
+    margin-bottom: 3px;
+}
+.card-sign{
+    position: absolute;
+    width: 34%;
+    top: -17%;
+    left: -5%;
+}
+.to-choose{
+    width: 80vw;
+    height: 60vh;
+    left: 10%;
+    top: 20vh;
+    margin-top: 0;
+    margin-left: 0;
+    background: rgba(255,255,255,0.7);
+}
+.to-choose img{
+    width: 100%;
+}
+.to-pick-card{
+    position: relative;
+    display: inline-block;
+    width: 17%;
+    height: 67%;
+    top: 20%;
+    margin: auto;
+    margin-right: 2%;
+    -webkit-transition: all 1s ease;
+    -moz-transition: all 1s ease;
+    transition: all 1s ease;
+}
+.to-pick-card.first{
+    margin-left: 2%;
+}
+ .to-choose .card-flipped{
+    position: absolute;
+    width: 400px;
+    height: auto;
+    margin: 0 auto;
+    top: 50%;
+    left: 50%;
+    margin-top: -250px;
+    margin-left: -200px;
+    z-index: 20;
+}
+.face{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border-radius:5px;
+    -webkit-transition: all 1s ease;
+    -moz-transition: all 1s ease;
+    transition: all 1s ease;
+    backface-visibility: hidden;
+    -ms-backface-visibility: hidden;
+    -moz-backface-visibility: hidden;
+    -webkit-backface-visibility: hidden;
+    -o-backface-visibility: hidden;
+    /*background-color: rgb(178, 39, 49);*/
+    
+}
+.front {
+    z-index: 10;
+}
+.back{
+    transform:rotate3d(0,1,0,-180deg);
+    -ms-transform:rotate3d(0,1,0,-180deg);  /* IE 9 */
+    -moz-transform:rotate3d(0,1,0,-180deg); /* Firefox */
+    -webkit-transform:rotate3d(0,1,0,-180deg); /* Safari 和 Chrome */
+    -o-transform:rotateY(0,1,0,-180deg);  /* Opera */
+    z-index: 8;
+}
+.card-flipped .front{
+    transform:rotate3d(0,1,0,180deg);
+    -ms-transform:rotate3d(0,1,0,180deg);/* IE 9 */
+    -moz-transform:rotate3d(0,1,0,180deg);/* Firefox */
+    -webkit-transform:rotate3d(0,1,0,180deg);/* Safari 和 Chrome */
+    -o-transform:rotate3d(0,1,0,180deg);  /* Opera */
+    z-index: 8;
+}
+.card-flipped .back{
+    transform:rotate3d(0,1,0,0deg);
+    -ms-transform:rotate3d(0,1,0,0deg);/* IE 9 */
+    -moz-transform:rotate3d(0,1,0,0deg);/* Firefox */
+    -webkit-transform:rotate3d(0,1,0,0deg);/* Safari 和 Chrome */
+    -o-transform:rotate3d(0,1,0,0deg);  /* Opera */
+    z-index: 10;
+}              
+
+
+
+
+.options{
+    position: relative;
+    margin-left: 70px;
+    margin-bottom: 15px;
+}
+.options.first{
+    margin-top: 352px;
+}
+#step-2-card .options.first{
+    margin-top: 290px;
+}     
+/*題目*/
+
+/*對錯*/
+.results{
+/*    left: 50%;
+    margin-left: -535px;
+    top: 50%;
+    margin-top: -319px;*/
+    left: 50%;
+    margin-left: -500px;
+}
+.result{
+    position: relative;
+}
+
+#right,#wrong{
+    left: 5%;
+    margin-left: 0;
+}
+#right img{
+    width: 100%;
+}
+#right .result,
+#wrong .result{
+    width: 80vw;
+}
+#right .close,
+#wrong .close{
+    width: 25%;
+    position: absolute;
+    top: 15%;
+    right: -11%;
+}
+#right .continue,
+#wrong .continue{
+    width: 21%;
+    position: absolute;
+    bottom: 25%;
+    right: 3%;
+}
+
+
+#complete{
+    margin-top: 100px;
+}
+.complete-text{
+    position: absolute;
+    right: 35px;
+    bottom: 160px;
+    font-size: 12pt;
+}
+.close{
+    position: absolute;
+/*    top: 92px;
+    right: 74px;*/
+    top: 92px;
+    right: -103px;
+}
+.continue{
+    position: absolute;
+    bottom: 155px;
+    right: 39px;
+}
+
+/*對錯*/
+
+/*container*/
+
+@keyframes character_move_1 {
+   0%{
+    transform: rotate(0deg);
+   }
+   4%{
+    transform: rotate(-3deg);
+   }
+   12%{
+    transform: rotate(3deg);
+   }
+   16%{
+    transform: rotate(0deg);
+   }
+} 
+
+@keyframes character_move_2 {
+   16%{
+    transform: rotate(0deg);
+   }
+   20%{
+    transform: rotate(-3deg);
+   }
+   28%{
+    transform: rotate(3deg);
+   }
+   32%{
+    transform: rotate(0deg);
+   }
+}
+
+@keyframes character_move_3 {
+   32%{
+    transform: rotate(0deg);
+   }
+   36%{
+    transform: rotate(-3deg);
+   }
+   44%{
+    transform: rotate(3deg);
+   }
+   48%{
+    transform: rotate(0deg);
+   }
+}
+
+@keyframes character_move_4 {
+   48%{
+    transform: rotate(0deg);
+   }
+   52%{
+    transform: rotate(-3deg);
+   }
+   60%{
+    transform: rotate(3deg);
+   }
+   64%{
+    transform: rotate(0deg);
+   }
+}
+
+@keyframes character_move_5 {
+   64%{
+    transform: rotate(0deg);
+   }
+   68%{
+    transform: rotate(-3deg);
+   }
+   76%{
+    transform: rotate(3deg);
+   }
+   80%{
+    transform: rotate(0deg);
+   }
+}
+
+
+@media screen and (orientation: portrait){
+
+.no-vertical{
+    display: block;
+}
+
+}

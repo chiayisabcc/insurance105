@@ -1,0 +1,56 @@
+.game-zone{
+    display: block;
+}
+
+.start{
+    position: absolute;
+    left: 48%;
+    top: 29%;
+    width: 31.2%;
+    transition: transform 0.1s;
+}
+.start.for-hover:hover{
+	transform: scale(1.1);
+}
+
+/*init*/
+
+.map{
+	opacity: 0;
+	transition: opacity 0.3s;
+}
+.map.active{
+	opacity: 1;
+}
+
+.logo{
+	transform: scale(0);
+	transition: transform 0.3s;
+}
+.logo.active{
+	transform: scale(1);
+}
+
+.doll{
+	transform: scale(0) rotate(45deg) translate(-100%,0);
+	transition: transform 1s;
+}
+.doll.active{
+	transform:none;
+}
+
+.start{
+	transform: scale(0);
+	transition: transform 0.3s;
+}
+.start.active{
+	transform: scale(1);
+}
+
+.menu-btn{
+	transform: scale(0);
+	transition: transform 0.2s;
+}
+.menu-btn.active{
+	transform: scale(1);
+}

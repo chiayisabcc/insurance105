@@ -15,11 +15,10 @@
 <link href="css/reset.css" rel="stylesheet" type="text/css" />
 <link href="css/jquery.mCustomScrollbar.css" rel="stylesheet" type="text/css" />
 <link href="css/main.css" rel="stylesheet" type="text/css" />
-<link href="css/game.css" rel="stylesheet" type="text/css" />
-<link href="css/index.css" rel="stylesheet" type="text/css" />
+<link href="css/award.css" rel="stylesheet" type="text/css" />
 <script>
 	if (navigator.userAgent.match(/HTC/i) || navigator.userAgent.match(/Android/i) || navigator.userAgent.match(/iPhone/i) || navigator.userAgent.match(/iPod/i) || navigator.userAgent.match(/iPad/i)) {
-		window.location.href = "/m/";
+		window.location.href = "/m/prize.html";
 	}
 </script>
 </head>
@@ -31,26 +30,32 @@
 
 	<div class="wrap">
 		<div class="container">
-			<div class="game-zone">
-				<div class="map ">
-					<img src="img/map.png">
-				</div>				
-				
-				<a href="game.html" onclick="ga('send', 'event', 'home', 'click', 'game_big');">
-					<div class="start btn for-hover">
-						<img src="img/start.png">
+			<div class="award-zone">
+				<div class="award first">
+					<div class="description">
+						<img src="img/award_1_text.png">
 					</div>
-				</a>
-				<div class="doll ">
-					<img src="img/doll.png">
+					<div class="pic">
+						<img src="img/award_1.png">
+					</div>
+				</div>
+				<div class="award">
+					<div class="description">
+						<img src="img/award_2_text.png">
+					</div>
+					<div class="pic">
+						<img src="img/award_2.png">
+					</div>
+				</div>
+				<div class="award">
+					<div class="description">
+						<img src="img/award_3_text.png">
+					</div>
+					<div class="pic">
+						<img src="img/award_3.png">
+					</div>
 				</div>
 			</div>
-
-<!-- 			<div class="game-header-wrap">
-				<div class="logo">
-					<img src="img/logo_s.png">
-				</div>
-			</div> -->
 		</div>		
 	</div>
 
@@ -59,12 +64,7 @@
 		<div class="mute-btn btn">
 			<img src="img/mute-btn.jpg">
 		</div>
-
-		<a href="index.html" onclick="ga('send', 'event', 'home', 'click', 'back_index');">
-			<div class="logo">
-				<img src="img/logo_s.png">
-			</div>
-		</a>
+		
 		<ul id="menu">
 			<li>
 				<a href="rule.html" onclick="ga('send', 'event', 'home', 'click', 'rule');">
@@ -87,6 +87,11 @@
 				</a>
 			</li>	
 		</ul>
+		<a href="index.html" onclick="ga('send', 'event', 'home', 'click', 'back_index');">
+			<div id="logo-s">
+				<img src="img/logo_s.png">
+			</div>
+		</a>
 	</header>
 
 	<footer>
